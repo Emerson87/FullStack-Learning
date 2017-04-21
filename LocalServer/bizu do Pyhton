@@ -1,0 +1,18 @@
+###### How to exec a Python Program withou IDLE ######
+	
+
+Built-in function: execfile
+
+execfile('helloworld.py')
+
+Deprecated since 2.6: popen
+
+import os
+os.popen('python helloworld.py') # Just run the program
+os.popen('python helloworld.py').read() # Also gets you the stdout
+
+Advance usage: subprocess
+
+import subprocess
+subprocess.call(['python', 'helloworld.py']) # Just run the program
+subprocess.check_output(['python', 'helloworld.py']) # Also gets you the stdout
